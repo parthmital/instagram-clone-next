@@ -1,0 +1,43 @@
+.Profile {
+    display: flex;
+    flex-direction: column;
+    gap: var(--4px);
+    align-self: stretch;
+}
+
+.Right {
+    display: flex;
+    align-items: center;
+    gap: var(--16px);
+}
+
+.Middle .Avatar {
+    --container-size: 90px;
+}
+
+.Avatar {
+    --container-size: 60px;
+}
+
+.ProfileSettings {
+    height: var(--18px);
+    padding: var(--8px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Sections {
+    display: flex;
+    align-items: center;
+    gap: var(--8px);
+    align-self: stretch;
+}
+
+.Interactions {
+    padding: var(--8px);
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+}

@@ -1,0 +1,40 @@
+.ExplorePage {
+    display: flex;
+    flex-direction: column;
+    gap: var(--16px);
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.FiltersTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--8px);
+    align-self: stretch;
+}
+
+.FilterTop {
+    height: var(--18px);
+    padding: var(--8px);
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+}
+
+.FiltersBottom {
+    display: flex;
+    align-items: center;
+    gap: var(--8px);
+    align-self: stretch;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.FilterBottom {
+    min-width: fit-content;
+    height: var(--18px);
+    padding: var(--8px);
+    justify-content: center;
+    align-items: center;
+}

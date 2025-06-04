@@ -1,0 +1,61 @@
+.Avatar {
+    --container-size: 72px;
+}
+
+.InstagramPost .Avatar {
+    --container-size: 36px;
+}
+
+.Posts {
+    display: flex;
+    flex: 1 0 0;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--16px);
+    align-self: stretch;
+    overflow-y: scroll;
+}
+
+.InstagramPost {
+    padding: var(--16px);
+    flex-direction: column;
+    gap: var(--8px);
+    align-self: stretch;
+}
+
+.ProfileContainer {
+    display: flex;
+    padding-bottom: var(--4px);
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.Profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--4px);
+}
+
+.Icons {
+    display: flex;
+    padding-top: var(--4px);
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.LeftIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--16px);
+}
+
+.Comments {
+    padding: var(--8px);
+    flex-direction: column;
+    gap: var(--4px);
+    align-self: stretch;
+}

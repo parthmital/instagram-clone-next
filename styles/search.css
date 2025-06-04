@@ -1,0 +1,51 @@
+.SearchPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--16px);
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.SearchFrame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--16px);
+    align-self: stretch;
+}
+
+.CancelButton {
+    padding: var(--8px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--8px);
+}
+
+.Searches {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--16px);
+    flex: 1 0 0;
+    align-self: stretch;
+    overflow-y: scroll;
+}
+
+.Search {
+    display: flex;
+    align-items: center;
+    gap: var(--8px);
+    align-self: stretch;
+}
+
+.Avatar {
+    --container-size: 50px;
+}
+
+.Details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--8px);
+}

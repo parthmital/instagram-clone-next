@@ -1,0 +1,67 @@
+.Notifications p {
+    font-size: var(--12px);
+}
+
+.Profile {
+    display: flex;
+    flex-direction: column;
+    gap: var(--4px);
+    align-self: stretch;
+}
+
+.Left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--8px);
+}
+
+.Notifications {
+    display: flex;
+    padding: 0px var(--4px);
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--8px);
+    background: var(--red);
+}
+
+.Right {
+    display: flex;
+    align-items: center;
+    gap: var(--16px);
+}
+
+.Avatar {
+    --container-size: 90px;
+}
+
+.EditProfile {
+    height: var(--18px);
+    padding: var(--8px);
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+}
+
+.ProfileSettings {
+    height: var(--18px);
+    padding: var(--8px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Sections {
+    display: flex;
+    align-items: center;
+    gap: var(--8px);
+    align-self: stretch;
+}
+
+.Frame {
+    padding: var(--8px);
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+}

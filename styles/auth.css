@@ -1,0 +1,33 @@
+body {
+    gap: var(--32px);
+    padding: var(--32px);
+    font-size: var(--16px);
+    min-height: auto;
+    overflow: auto;
+    text-align: center;
+}
+
+.InstagramLogo {
+    width: 64px;
+    height: 64px;
+}
+
+.Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--16px);
+    align-self: stretch;
+}
+
+.BlueButton {
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    padding: var(--8px);
+    border: none;
+    background: var(--blue);
+    color: var(--white);
+    text-align: center;
+    font-size: var(--16px);
+}

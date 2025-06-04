@@ -1,0 +1,44 @@
+.CommentsBar {
+    padding: var(--8px);
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+}
+
+.Comments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--16px);
+    flex: 1 0 0;
+    align-self: stretch;
+    overflow-y: scroll;
+}
+
+.Comment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--8px);
+    align-self: stretch;
+}
+
+.Avatar {
+    --container-size: 50px;
+}
+
+.CommentIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--16px);
+    align-self: stretch;
+}
+
+.CommentIcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--8px);
+}
