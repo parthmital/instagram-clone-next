@@ -57,14 +57,9 @@ export default function SignUpPage() {
                 from your friends
             </p>
             <form className="Form">
-                <input
-                    type="text"
-                    className="InputField"
-                    placeholder="Mobile Number or Email Address"
-                />
-                <input type="text" className="InputField" placeholder="Password" />
                 <input type="text" className="InputField" placeholder="Full Name" />
                 <input type="text" className="InputField" placeholder="Username" />
+                <input type="text" className="InputField" placeholder="Password" />
             </form>
             <p>
                 People who use our service may have uploaded your contact information.
