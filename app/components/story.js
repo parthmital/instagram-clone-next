@@ -1,4 +1,6 @@
-export default function Story() {
+'use client';
+
+export default function Story({ stories }) {
     return (
         <div className="Story">
             <div className="Avatar">

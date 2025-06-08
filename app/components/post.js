@@ -1,7 +1,9 @@
-export default function Post() {
+'use client';
+
+export default function Post({ post }) {
     return (
         <div className="Post">
-            <img src="assets/catpost2.jpg" />
+            <img src={post.image} />
         </div>
     );
 }

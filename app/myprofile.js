@@ -1,15 +1,43 @@
+'use client';
+
 import Post from './components/post';
 import Footer from './components/footer';
 import '../styles/myprofile.css';
+import { useEffect, useState } from 'react';
 
 export default function MyProfilePage() {
+    const [profile, setProfile] = useState(null);
+    const [posts, setPosts] = useState([]);
+    const [stats, setStats] = useState({
+        posts: 0,
+        followers: 0,
+        following: 0
+    });
+    useEffect(() => {
+        // Fetch profile data
+        fetch('http://localhost:3001/users/1') // Assuming user ID 1 is the current user
+            .then(res => res.json())
+            .then(data => {
+                setProfile(data);
+                setStats({
+                    posts: data.postsCount,
+                    followers: data.followersCount,
+                    following: data.followingCount
+                });
+            });
+        // Fetch posts for this user
+        fetch('http://localhost:3001/posts?userId=1')
+            .then(res => res.json())
+            .then(data => setPosts(data));
+    }, []);
+    if (!profile) return <div>Loading...</div>;
     return (
         <>
             <div className="MyProfile">
                 <div className="Profile">
                     <div className="Top">
                         <div className="Left">
-                            <p className="BigText BoldText">parth_mital.1310</p>
+                            <p className="BigText BoldText">{profile.username}</p>
                             <div className="Notifications">
                                 <p>10+</p>
                             </div>
@@ -86,25 +114,25 @@ export default function MyProfilePage() {
                                     </linearGradient>
                                 </defs>
                             </svg>
-                            <img src="assets/me.jpg" className="ProfilePic" />
+                            <img src={profile.profilePic} className="ProfilePic" />
                         </div>
                         <div className="StatsFrame">
                             <div className="Stats">
-                                <p className="BoldText">18</p>
+                                <p className="BoldText">{stats.posts}</p>
                                 <p>Posts</p>
                             </div>
                             <div className="Stats">
-                                <p className="BoldText">338</p>
+                                <p className="BoldText">{stats.followers}</p>
                                 <p>Followers</p>
                             </div>
                             <div className="Stats">
-                                <p className="BoldText">352</p>
+                                <p className="BoldText">{stats.following}</p>
                                 <p>Following</p>
                             </div>
                         </div>
                     </div>
-                    <p className="BoldText">Parth Mital</p>
-                    <p>‘04</p>
+                    <p className="BoldText">{profile.fullName}</p>
+                    <p>{profile.bio}</p>
                     <div className="Bottom">
                         <div className="Button EditProfile">
                             <p className="BoldText">Edit Profile</p>
@@ -176,24 +204,9 @@ export default function MyProfilePage() {
                 </div>
                 <div className="PostsContainer">
                     <div className="PostsGrid">
-                        <Post />
-                        <Post />
-                        <Post />
-                        <Post />
-                        <Post />
-                        <Post />
-                        <Post />
-                        <Post />
-                        <Post />
-                        <Post />
-                        <Post />
-                        <Post />
-                        <Post />
-                        <Post />
-                        <Post />
-                        <Post />
-                        <Post />
-                        <Post />
+                        {posts.map(post => (
+                            <Post key={post.id} post={post} />
+                        ))}
                     </div>
                 </div>
             </div>
