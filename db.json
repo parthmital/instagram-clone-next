@@ -5,7 +5,7 @@
       "fullName": "Donald Garcia",
       "username": "donaldgarcia",
       "password": "+#8P@CsS4V",
-      "profilePic": "https://dummyimage.com/150x150",
+      "profilePic": "https://picsum.photos/1000",
       "bio": "Democratic shake bill here.",
       "followers": [],
       "following": [],
@@ -16,28 +16,28 @@
         {
           "id": "9a8dca03-580d-4b71-98f5-64135be6128e",
           "title": "everything",
-          "cover": "https://picsum.photos/100/100"
+          "cover": "https://picsum.photos/1000"
         },
         {
           "id": "1ff49b78-8946-4e85-b59c-de66bacfb3d0",
           "title": "win",
-          "cover": "https://dummyimage.com/100x100"
+          "cover": "https://picsum.photos/1000"
         },
         {
           "id": "d453dd32-4b0d-4b41-8d52-88f1142c3fe8",
           "title": "production",
-          "cover": "https://placekitten.com/100/100"
+          "cover": "https://picsum.photos/1000"
         }
       ],
       "stories": [
         {
           "id": "93cd59bf-5c94-4cf0-9c98-d2c1e2acf72f",
-          "media": "https://picsum.photos/300/300",
+          "media": "https://picsum.photos/1000",
           "timestamp": "2025-05-17T19:32:33"
         },
         {
           "id": "3a578a8e-a948-4d99-8bbb-259911ce5dd2",
-          "media": "https://dummyimage.com/300x300",
+          "media": "https://picsum.photos/1000",
           "timestamp": "2025-01-16T11:51:27"
         }
       ]
@@ -47,7 +47,7 @@
       "fullName": "Sharon James",
       "username": "xreid",
       "password": "5dcLYg6M#u",
-      "profilePic": "https://picsum.photos/150/150",
+      "profilePic": "https://picsum.photos/1000",
       "bio": "Source husband at.",
       "followers": [
         2
@@ -62,33 +62,33 @@
         {
           "id": "e059a0ee-9132-463e-b162-87e4e9c349e0",
           "title": "serious",
-          "cover": "https://dummyimage.com/100x100"
+          "cover": "https://picsum.photos/1000"
         },
         {
           "id": "654821d0-7fcd-4eb1-a7ca-d415366eb16f",
           "title": "usually",
-          "cover": "https://placekitten.com/100/100"
+          "cover": "https://picsum.photos/1000"
         },
         {
           "id": "23bed01d-43cf-4fde-a493-3b83757750a9",
           "title": "employee",
-          "cover": "https://placekitten.com/100/100"
+          "cover": "https://picsum.photos/1000"
         }
       ],
       "stories": [
         {
           "id": "bf3c4c06-4343-48bc-89fa-6a688fb5d27b",
-          "media": "https://placekitten.com/300/300",
+          "media": "https://picsum.photos/1000",
           "timestamp": "2025-03-25T04:38:46"
         },
         {
           "id": "5cabcc97-663f-4c97-9562-69f0e5d7b875",
-          "media": "https://picsum.photos/300/300",
+          "media": "https://picsum.photos/1000",
           "timestamp": "2025-01-27T20:40:21"
         },
         {
           "id": "c17af08a-1745-46d8-be57-0ddf827050a8",
-          "media": "https://picsum.photos/300/300",
+          "media": "https://picsum.photos/1000",
           "timestamp": "2025-01-22T07:00:07"
         }
       ]
@@ -98,7 +98,7 @@
       "fullName": "Christopher Becker",
       "username": "cruzcaitlin",
       "password": "p8Icr7Z(*L",
-      "profilePic": "https://placekitten.com/150/150",
+      "profilePic": "https://picsum.photos/1000",
       "bio": "Success medical current hear claim.",
       "followers": [
         1,
@@ -114,13 +114,13 @@
         {
           "id": "87c5421e-ec24-43c5-8754-108ff4188f3f",
           "title": "why",
-          "cover": "https://picsum.photos/100/100"
+          "cover": "https://picsum.photos/1000"
         }
       ],
       "stories": [
         {
           "id": "04fc6d82-7d15-4385-92fb-e43b99546eb4",
-          "media": "https://picsum.photos/300/300",
+          "media": "https://picsum.photos/1000",
           "timestamp": "2025-03-12T11:36:46"
         }
       ]
@@ -130,7 +130,7 @@
       "fullName": "Sandra Parker",
       "username": "allenashley",
       "password": "myR1XwpR@x",
-      "profilePic": "https://placekitten.com/150/150",
+      "profilePic": "https://picsum.photos/1000",
       "bio": "Just military building different full open.",
       "followers": [
         5,
@@ -151,13 +151,13 @@
         {
           "id": "01d74256-3860-4ab6-96a4-02f23ae8cc93",
           "title": "avoid",
-          "cover": "https://placekitten.com/100/100"
+          "cover": "https://picsum.photos/1000"
         }
       ],
       "stories": [
         {
           "id": "114125c6-3a9b-4dd4-8f12-59e0a18ff6b6",
-          "media": "https://picsum.photos/300/300",
+          "media": "https://picsum.photos/1000",
           "timestamp": "2025-03-06T03:54:30"
         }
       ]
@@ -167,7 +167,7 @@
       "fullName": "David Caldwell",
       "username": "ambercummings",
       "password": ")92*JPhfby",
-      "profilePic": "https://picsum.photos/150/150",
+      "profilePic": "https://picsum.photos/1000",
       "bio": "Court movie cell contain leg.",
       "followers": [
         3,
@@ -184,13 +184,13 @@
         {
           "id": "71710434-134c-4c92-ac5b-227cdfde4fbf",
           "title": "system",
-          "cover": "https://placekitten.com/100/100"
+          "cover": "https://picsum.photos/1000"
         }
       ],
       "stories": [
         {
           "id": "ffd0f9d5-a6f2-47b8-8cf3-5b5819108be5",
-          "media": "https://placekitten.com/300/300",
+          "media": "https://picsum.photos/1000",
           "timestamp": "2025-01-03T20:46:35"
         }
       ]
@@ -200,7 +200,7 @@
     {
       "id": 1,
       "userId": 1,
-      "image": "https://picsum.photos/500/500",
+      "image": "https://picsum.photos/1000",
       "description": "Coach magazine degree husband around.",
       "likes": 49,
       "commentsCount": 2,
@@ -235,7 +235,7 @@
     {
       "id": 2,
       "userId": 1,
-      "image": "https://dummyimage.com/500x500",
+      "image": "https://picsum.photos/1000",
       "description": "World enter six.",
       "likes": 176,
       "commentsCount": 1,
@@ -262,7 +262,7 @@
     {
       "id": 3,
       "userId": 1,
-      "image": "https://dummyimage.com/500x500",
+      "image": "https://picsum.photos/1000",
       "description": "Institution whatever yet new responsibility.",
       "likes": 22,
       "commentsCount": 5,
@@ -354,7 +354,7 @@
     {
       "id": 4,
       "userId": 1,
-      "image": "https://picsum.photos/500/500",
+      "image": "https://picsum.photos/1000",
       "description": "Father why often my security.",
       "likes": 63,
       "commentsCount": 0,
@@ -365,7 +365,7 @@
     {
       "id": 5,
       "userId": 2,
-      "image": "https://picsum.photos/500/500",
+      "image": "https://picsum.photos/1000",
       "description": "Once me system.",
       "likes": 150,
       "commentsCount": 0,
@@ -376,7 +376,7 @@
     {
       "id": 6,
       "userId": 2,
-      "image": "https://picsum.photos/500/500",
+      "image": "https://picsum.photos/1000",
       "description": "Whether bag control organization.",
       "likes": 98,
       "commentsCount": 1,
@@ -403,7 +403,7 @@
     {
       "id": 7,
       "userId": 2,
-      "image": "https://placekitten.com/500/500",
+      "image": "https://picsum.photos/1000",
       "description": "Identify walk now often always.",
       "likes": 338,
       "commentsCount": 0,
@@ -414,7 +414,7 @@
     {
       "id": 8,
       "userId": 2,
-      "image": "https://picsum.photos/500/500",
+      "image": "https://picsum.photos/1000",
       "description": "Price north first end prove fire.",
       "likes": 148,
       "commentsCount": 3,
@@ -470,7 +470,7 @@
     {
       "id": 9,
       "userId": 2,
-      "image": "https://dummyimage.com/500x500",
+      "image": "https://picsum.photos/1000",
       "description": "Capital population lead upon very act.",
       "likes": 119,
       "commentsCount": 0,
@@ -481,7 +481,7 @@
     {
       "id": 10,
       "userId": 3,
-      "image": "https://placekitten.com/500/500",
+      "image": "https://picsum.photos/1000",
       "description": "You available defense enter value thing these.",
       "likes": 232,
       "commentsCount": 2,
@@ -516,7 +516,7 @@
     {
       "id": 11,
       "userId": 3,
-      "image": "https://dummyimage.com/500x500",
+      "image": "https://picsum.photos/1000",
       "description": "Citizen street region particularly would.",
       "likes": 189,
       "commentsCount": 4,
@@ -580,7 +580,7 @@
     {
       "id": 12,
       "userId": 3,
-      "image": "https://placekitten.com/500/500",
+      "image": "https://picsum.photos/1000",
       "description": "Account stage federal professional voice care break.",
       "likes": 343,
       "commentsCount": 2,
@@ -608,7 +608,7 @@
     {
       "id": 13,
       "userId": 4,
-      "image": "https://picsum.photos/500/500",
+      "image": "https://picsum.photos/1000",
       "description": "Choice example decision garden reach table measure.",
       "likes": 311,
       "commentsCount": 0,
@@ -619,7 +619,7 @@
     {
       "id": 14,
       "userId": 5,
-      "image": "https://dummyimage.com/500x500",
+      "image": "https://picsum.photos/1000",
       "description": "Begin interest everybody.",
       "likes": 83,
       "commentsCount": 1,
@@ -639,7 +639,7 @@
     {
       "id": 15,
       "userId": 5,
-      "image": "https://picsum.photos/500/500",
+      "image": "https://picsum.photos/1000",
       "description": "Side PM energy scientist necessary into.",
       "likes": 138,
       "commentsCount": 5,

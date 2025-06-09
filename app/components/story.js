@@ -1,6 +1,6 @@
 'use client';
 
-export default function Story({ stories }) {
+export default function Story({ stories, title, cover, index, type = 'story' }) {
     return (
         <div className="Story">
             <div className="Avatar">
@@ -29,13 +29,17 @@ export default function Story({ stories }) {
                         >
                             <stop stopColor="#C913B9" />
                             <stop offset="0.500947" stopColor="#F9373F" />
-                            <stop offset={1} stopColor="#FECD00" />
+                            <stop offset="1" stopColor="#FECD00" />
                         </linearGradient>
                     </defs>
                 </svg>
-                <img src="assets/catsofvit.jpg" className="ProfilePic" />
+                {type === 'highlight' ? (
+                    <img src={cover} alt={title} className="ProfilePic" />
+                ) : (
+                    <img src={stories.profilePic} alt={stories.username} className="ProfilePic" />
+                )}
             </div>
-            <p>catsofvit</p>
+            <p>{type === 'highlight' ? title : stories.username}</p>
         </div>
     );
 }

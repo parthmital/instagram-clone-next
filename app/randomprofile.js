@@ -163,16 +163,14 @@ export default function RandomProfilePage() {
                     </div>
                 </div>
                 <div className="Stories">
-                    <Story />
-                    <Story />
-                    <Story />
-                    <Story />
-                    <Story />
-                    <Story />
-                    <Story />
-                    <Story />
-                    <Story />
-                    <Story />
+                    {profile.highlights.map((highlight, index) => (
+                        <Story
+                            key={highlight.id}
+                            title={highlight.title}
+                            cover={highlight.cover}
+                            type="highlight"
+                        />
+                    ))}
                 </div>
                 <div className="Sections">
                     <div className="Button Interactions">
