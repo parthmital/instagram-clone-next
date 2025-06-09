@@ -1,9 +1,40 @@
+'use client';
+
 import Story from './components/story';
 import Post from './components/post';
 import Footer from './components/footer';
 import '../styles/randomprofile.css';
+import { useEffect, useState } from 'react';
 
 export default function RandomProfilePage() {
+    const [profile, setProfile] = useState(null);
+    const [posts, setPosts] = useState([]);
+    const [stats, setStats] = useState({
+        posts: 0,
+        followers: 0,
+        following: 0
+    }); useEffect(() => {
+        // Get random user ID between 1 and 5 (based on db.json)
+        const randomUserId = Math.floor(Math.random() * 5) + 1;
+
+        // Fetch profile data
+        fetch(`http://localhost:3001/users/${randomUserId}`)
+            .then(res => res.json())
+            .then(data => {
+                setProfile(data);
+                setStats({
+                    posts: data.postsCount,
+                    followers: data.followersCount,
+                    following: data.followingCount
+                });
+            });
+
+        // Fetch posts for this random user
+        fetch(`http://localhost:3001/posts?userId=${randomUserId}`)
+            .then(res => res.json())
+            .then(data => setPosts(data));
+    }, []);
+    if (!profile) return <div>Loading...</div>;
     return (
         <>
             <div className="MyProfile">
@@ -23,7 +54,7 @@ export default function RandomProfilePage() {
                                 fill="white"
                             />
                         </svg>
-                        <p className="BigText BoldText">catsofvit</p>
+                        <p className="BigText BoldText">{profile.username}</p>
                         <div className="Right">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -84,26 +115,25 @@ export default function RandomProfilePage() {
                                     </linearGradient>
                                 </defs>
                             </svg>
-                            <img src="assets/catsofvit.jpg" className="ProfilePic" />
+                            <img src={profile.profilePic} className="ProfilePic" />
                         </div>
                         <div className="StatsFrame">
                             <div className="Stats">
-                                <p className="BoldText">63</p>
+                                <p className="BoldText">{stats.posts}</p>
                                 <p>Posts</p>
                             </div>
                             <div className="Stats">
-                                <p className="BoldText">1,007</p>
+                                <p className="BoldText">{stats.followers}</p>
                                 <p>Followers</p>
                             </div>
                             <div className="Stats">
-                                <p className="BoldText">653</p>
+                                <p className="BoldText">{stats.following}</p>
                                 <p>Following</p>
                             </div>
                         </div>
                     </div>
-                    <p className="BoldText">Cats of VIT</p>
-                    <p className="LightText">Military Base</p>
-                    <p>Rare wholesome VIT Vellore page</p>
+                    <p className="BoldText">{profile.fullName}</p>
+                    <p>{profile.bio}</p>
                     <div className="Bottom">
                         <div className="Button Interactions">
                             <p className="BoldText">Following</p>
@@ -193,24 +223,9 @@ export default function RandomProfilePage() {
                 </div>
                 <div className="PostsContainer">
                     <div className="PostsGrid">
-                        <Post />
-                        <Post />
-                        <Post />
-                        <Post />
-                        <Post />
-                        <Post />
-                        <Post />
-                        <Post />
-                        <Post />
-                        <Post />
-                        <Post />
-                        <Post />
-                        <Post />
-                        <Post />
-                        <Post />
-                        <Post />
-                        <Post />
-                        <Post />
+                        {posts.map(post => (
+                            <Post key={post.id} post={post} />
+                        ))}
                     </div>
                 </div>
             </div>
